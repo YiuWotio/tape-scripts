@@ -1,6 +1,6 @@
 #! /bin/bash
 
-date=$( date +%Y-%m-%d )
+date=$( date +%Y-%m-%d-%H-%M )
 
 bin_path=$(dirname ${0})
 log_path=$bin_path/log
