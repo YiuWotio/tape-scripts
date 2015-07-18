@@ -15,5 +15,8 @@ folder="$1"
 . $bin_path/helpers.sh
 
 show_pos
+$bin_path/jump_to_end_of_tape.sh
+
+show_pos
 tar --label "${date}_${folder}" -cvf /dev/nst0 "$folder"
 show_pos
