@@ -1,7 +1,8 @@
 #! /bin/bash
 
+bin_path=$(dirname ${0})
 folder="$1"
 
-./show_position.sh
+$bin_path/show_position.sh
 tar cvf /dev/nst0 "$folder"
-./show_position.sh
+$bin_path/show_position.sh
