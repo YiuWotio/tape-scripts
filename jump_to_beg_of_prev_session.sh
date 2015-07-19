@@ -2,10 +2,12 @@
 
 bin_path=$(dirname ${0})
 
-$bin_path/show_position.sh
+. $bin_path/helpers.sh
+
+show_pos
 mt -f /dev/nst0 bsf 1
-$bin_path/show_position.sh
+show_pos
 mt -f /dev/nst0 bsf 1
-$bin_path/show_position.sh
+show_pos
 mt -f /dev/nst0 fsf 1
-$bin_path/show_position.sh
+show_pos
