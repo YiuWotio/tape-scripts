@@ -1,7 +1,11 @@
 #! /bin/bash
 
-while getopts ":d:" opt; do
+while getopts ":s:d:" opt; do
 	case $opt in
+		s)
+			echo $OPTARG
+			S=$OPTARG
+			;;
 		d)
 			D=$OPTARG
 			;;

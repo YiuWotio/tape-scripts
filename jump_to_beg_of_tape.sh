@@ -1,9 +1,10 @@
 #! /bin/bash
 
-status="$1"
 bin_path=$(dirname ${0})
 
 . $bin_path/helpers.sh
+
+status="$S"
 
 show_pos
 
