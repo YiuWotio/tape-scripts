@@ -1,9 +1,12 @@
 #! /bin/bash
 
 show_pos() {
+	status_result=$(mt -f /dev/nst0 status |grep File)
+	tell_result=$(mt -f /dev/nst0 tell)
+	block=$( echo $tell_result | sed -e 's/^At block\ \(.*\).$/\1/' )
 	if [ "$D" == 1 ]; then
-		mt -f /dev/nst0 tell
-		mt -f /dev/nst0 status |grep File
+		echo $tell_result
+		echo $status_result
 	fi
 }
 
