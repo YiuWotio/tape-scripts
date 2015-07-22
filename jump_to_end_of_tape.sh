@@ -17,6 +17,7 @@ while $(mt -f /dev/nst0 fsf 1); do
 
 	echo "Session block size: $size"
 	echo "Session label: $session_label"
+	echo "-------------------------------------------------------"
 
 	session_label=$( $bin_path/show_session_label.sh )
 
