@@ -14,4 +14,4 @@ status="Still Rewinding...."
 $bin_path/jump_to_beg_of_tape.sh -s "$status"
 
 echo Generating Report onto $log_path/report_$date.log 
-$bin_path/jump_to_end_of_tape.sh -d 1 >> $log_path/report_$date.log 2>&1
+$bin_path/jump_to_end_of_tape.sh >> $log_path/report_$date.log 2>&1
